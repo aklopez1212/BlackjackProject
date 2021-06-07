@@ -43,4 +43,8 @@ public class Card {
 		return rank.getValue();
 	}
 
+	public Rank getRank() {
+		return rank;
+	}
+
 }
