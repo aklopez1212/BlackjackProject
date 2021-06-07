@@ -47,6 +47,7 @@ public class BlackJackApp {
 			test.addCard(testShuffle.dealCard());
 		}
 		System.out.println(test.getCards());
+		run(sc);
 	}
 
 	public void gamePlay() {
@@ -89,7 +90,7 @@ public class BlackJackApp {
 		do {
 			if (dealer.getHandValue() < 17) {
 				dealer.addCard(deck.dealCard());
-				System.out.println(dealer.getCards() + "Total: " + dealer.getHandValue());
+				System.out.println("Dealer has: " + dealer.getCards() + "For a Total of: " + dealer.getHandValue());
 			}
 		} while (dealer.getHandValue() <= 17);
 		winCheck(dealer, player);
